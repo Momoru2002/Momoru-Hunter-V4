@@ -61,7 +61,7 @@ momoru/
 Clone the repository:
 
 ```bash
-git clone https://github.com/yourusername/Momoru-Hunter-V4.git
+git clone https://github.com/Momoru2002/Momoru-Hunter-V4.git
 cd Momoru-Hunter-V4
 ```
 
