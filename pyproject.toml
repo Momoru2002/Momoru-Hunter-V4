@@ -1,0 +1,23 @@
+[tool.poetry]
+name = "momoru-hunter-v4"
+version = "4.0.0"
+description = "Automated Anti-Buzzer Intelligence & Digital Forensic Tools"
+authors = ["https://github.com/Momoru2002 <monarchlinux77@gmail.com>"]
+packages = [{include = "momoru"}]
+
+[tool.poetry.dependencies]
+python = "^3.10"
+click = "^8.1.7"
+rich = "^13.7.0"
+pyyaml = "^6.0.1"
+scikit-learn = "^1.4.0"
+numpy = ">=1.26.3"
+playwright = "^1.41.2"
+jinja2 = "^3.1.3"
+
+[tool.poetry.scripts]
+momoru = "momoru.cli:main"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"

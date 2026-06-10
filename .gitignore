@@ -1,0 +1,42 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Build Files
+build/
+dist/
+*.egg-info/
+
+# Environment Variables
+.env
+
+# IDE
+.vscode/
+.idea/
+
+# OS Files
+.DS_Store
+Thumbs.db
+
+# Test & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Reports & Exports
+reports/
+exports/
+*.csv
+*.html
+*.json
+
+# Logs
+*.log
+
+# Local Configuration
+config.local.yaml

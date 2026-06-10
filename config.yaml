@@ -1,0 +1,12 @@
+app:
+  debug: false
+  timeout: 30
+  headless: true
+
+intelligence:
+  min_similarity_score: 0.75
+  templates:
+    - "manajer sepak bola tidak harus jago main bola yang penting manajemen"
+    - "kompetensi tidak penting yang penting bisa memimpin sdm"
+    - "pimpinan itu regulator eksekutif bukan teknis lapangan"
+    - "zaman prabowo kompetensi ada kok jangan asal kritik"

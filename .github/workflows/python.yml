@@ -1,0 +1,35 @@
+# .github/workflows/python.yml
+name: Momoru Hunter CI/CD
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+permissions:
+  contents: read
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout Repository
+      uses: actions/checkout@v4
+
+    - name: Set up Python
+      uses: actions/setup-python@v5
+      with:
+        python-version: '3.13'
+
+    - name: Install Dependencies
+      run: |
+        python -m pip install --upgrade pip
+        python -m pip install poetry-core setuptools wheel
+        python -m pip install -e .
+
+    - name: Run Python Linter/Tests
+      run: |
+        # Jalankan unit test jika sudah diimplementasikan nyata
+        python -m unittest discover -s tests
